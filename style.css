@@ -21,6 +21,14 @@
   /* background-color: blanchedalmond; */
   background-size: 100%;
 }
+.ham i{
+  color: #edf2f4;
+  font-size: 25px;
+  
+}
+.ham i:active{
+  color:#00b4d8;
+}
 .nav {
   width: 100vw;
   height: 100px;
