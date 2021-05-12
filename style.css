@@ -148,15 +148,15 @@ html {
   .first {
     background-size: 100% auto;
   }
-  /* .nav {
-    height: 47px;
-  } */
-  /* .logo a {
-    font-size: 20px;
-  } */
+  .nav {
+    height: 4.7rem;
+  }
+  .logo a {
+    font-size: 2rem;
+  }
   .box2 {
-    width: 25.7rem;
-    height: 23.1rem;
+    width: 34.7rem;
+    height: 29.1rem;
   } 
   .box1 {
     width: 21.5rem;
@@ -164,15 +164,15 @@ html {
   } 
   #hi {
     font-size: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   } 
   .box1 h1 {
     font-size: 2rem;
     line-height: 2.6rem;
   } 
   .con-icon {
-    right: 10.9rem;
-    top: 16.8rem;
+    right: 15.9rem;
+    top: 19.8rem;
     justify-content: space-around;
   } 
    .con-icon i {
