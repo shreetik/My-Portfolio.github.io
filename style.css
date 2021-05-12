@@ -92,6 +92,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 1;
   position: relative;
 }
 .box1 {
@@ -133,6 +134,39 @@ html {
   color: #edf2f4;
 }
 
+.min-bar{
+  background-color:rgba(80, 88, 88, 0.253);
+  z-index: 10;
+  height: 0rem;
+  width: 27rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 17rem;
+  bottom: 29rem;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.min-bar ul li{
+  list-style: none;
+ 
+}
+.min-bar ul li a{
+  line-height: 3.5rem;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  color: #edf2f4;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  
+}
+.min-bar ul li a:active{
+  color: #00b4d8;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -159,7 +193,7 @@ html {
     height: 29.1rem;
   } 
   .box1 {
-    width: 21.5rem;
+    width: 22.5rem;
     height: 10.4rem;
   } 
   #hi {

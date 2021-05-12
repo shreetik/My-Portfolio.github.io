@@ -14,7 +14,8 @@
         <div class="first">
         <div class="nav">
             <div class="logo"><a href="#">My Portfolio</a></div>
-            <div class="ham"><i class="fa fa-bars"></i></div>
+            <div class="ham"  onclick="opennav()"><i class="fa fa-bars"></i></div>
+        
             <div class="bar">
             <ul>
                 <li id="active"><a href="#">Home</a></li>
@@ -39,7 +40,28 @@
         </div>
     </div>
 </div>
+<div class="min-bar" id="open">
+    <ul>
+        <li id="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
     </div>
     
+
+    <script>
+const opennav = () => {
+    document.getElementById('open').style.height = "16rem";
+}
+
+window.addEventListener('mouseup',function(event){
+    var box = document.getElementById('open');
+    if(event.target != box){
+        box.style.height = '0rem';
+    }
+})
+    </script>
 </body>
 </html>
