@@ -15,6 +15,7 @@ html {
 .container {
   width: 100%;
   height: 100vh;
+
   /* background-image: url("shreetik.jpg");
   background-repeat: no-repeat; */
   /* background-size: cover; */
@@ -123,10 +124,12 @@ header.sticky {
   width: 60rem;
   height: 21.5rem;
   /* background-color: #edf2f4; */
+  font-size: calc(1rem + 1vw);
 }
 .box1 h1 {
   font-family: "Lato", sans-serif;
   font-size: 5rem;
+
   font-weight: lighter;
   word-spacing: 0.3rem;
   line-height: 5.9rem;
@@ -263,9 +266,9 @@ header.sticky {
 }
 
 @media only screen and (max-width: 480px) {
-  html {
-    font-size: 65%;
-  }
+  /* html {
+    font-size: 10px;
+  } */
 
   .ham {
     display: inline-block;
@@ -288,20 +291,21 @@ header.sticky {
     height: 50.1rem;
   }
   .box1 {
-    width: 32.5rem;
+    width: 34.5rem;
     height: 12.4rem;
   }
   #hi {
     font-size: 4rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.6rem;
   }
   .box1 h1 {
-    font-size: 3rem;
-    line-height: 4.2rem;
+    font-size: 2.7rem;
+    line-height: 3.6rem;
+    word-spacing: 0rem;
   }
   .con-icon {
-    right: 23rem;
-    top: 32.8rem;
+    right: 25rem;
+    top: 31.8rem;
     justify-content: space-around;
   }
   .con-icon i {
