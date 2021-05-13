@@ -21,11 +21,11 @@ html {
   /* background-size: 100%; */
 }
 .first {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url("shreetik.jpg");
   background-repeat: no-repeat;
-  overflow: ;
+  overflow: hidden;
   background-attachment: fixed;
   /* background-color: blanchedalmond; */
   background-size: cover;
@@ -274,15 +274,14 @@ header.sticky {
     background-size: cover;
   }
   .nav {
-    padding: 3rem 0rem 0rem 0rem;
-    height: 9.7rem;
+    height: 6.7rem;
   }
   .logo a {
     font-size: 2rem;
   }
   .box2 {
     width: 39.7rem;
-    height: 60.1rem;
+    height: 50.1rem;
   }
   .box1 {
     width: 32.5rem;
@@ -294,11 +293,11 @@ header.sticky {
   }
   .box1 h1 {
     font-size: 3rem;
-    line-height: 3.6rem;
+    line-height: 4.2rem;
   }
   .con-icon {
     right: 23rem;
-    top: 36.8rem;
+    top: 32.8rem;
     justify-content: space-around;
   }
   .con-icon i {
