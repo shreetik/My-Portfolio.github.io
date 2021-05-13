@@ -5,11 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 .container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   /* background-image: url("shreetik.jpg");
   background-repeat: no-repeat; */
@@ -17,9 +21,11 @@ html {
   /* background-size: 100%; */
 }
 .first {
+  width: 100vw;
+  height: 100vh;
   background-image: url("shreetik.jpg");
   background-repeat: no-repeat;
-  overflow: hidden;
+  overflow: ;
   background-attachment: fixed;
   /* background-color: blanchedalmond; */
   background-size: cover;
@@ -33,11 +39,20 @@ html {
 }
 .nav {
   width: 100vw;
-  height: 100px;
+  height: 8rem;
   /* background-color: antiquewhite; */
+
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+header {
+  z-index: 100000;
+}
+
+header.sticky {
+  position: fixed;
+  background-color: #88888869;
 }
 .ham {
   display: none;
@@ -58,6 +73,15 @@ html {
 
   position: relative;
 }
+#active a:before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #00b4d8;
+}
 .bar a:before {
   content: "";
   position: absolute;
@@ -76,7 +100,7 @@ html {
   list-style: none;
   text-decoration: none;
   font-family: "Lato", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   letter-spacing: 0.1rem;
   color: #00b4d8;
   font-weight: bolder;
@@ -134,8 +158,8 @@ html {
   color: #edf2f4;
 }
 
-.min-bar{
-  background-color:rgba(80, 88, 88, 0.253);
+.min-bar {
+  background-color: rgba(80, 88, 88, 0.253);
   z-index: 10;
   height: 0rem;
   width: 27rem;
@@ -143,17 +167,16 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 17rem;
-  bottom: 29rem;
+  left: 5rem;
+  bottom: 63rem;
   border-radius: 2px;
   overflow: hidden;
   transition: all 0.5s;
 }
-.min-bar ul li{
+.min-bar ul li {
   list-style: none;
- 
 }
-.min-bar ul li a{
+.min-bar ul li a {
   line-height: 3.5rem;
   text-decoration: none;
   font-family: "Lato", sans-serif;
@@ -161,15 +184,83 @@ html {
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  
 }
-.min-bar ul li a:active{
+.min-bar ul li a:active {
   color: #00b4d8;
+}
+.second {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1f5f2;
+}
+.con {
+  /* background-color: cornflowerblue; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading {
+  position: relative;
+  top: 8rem;
+  /* background-color: bisque; */
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 5rem;
+  font-weight: lighter;
+}
+
+.img-cap {
+  /* background-color: blueviolet; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.profile-pic {
+  /* background-color: darkgrey; */
+  width: 50rem;
+  height: 50rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-pic img {
+  width: 40rem;
+  height: 48rem;
+  box-shadow: 10px 10px 31px #888888;
+}
+.bio {
+  /* background-color: aquamarine; */
+  width: 78rem;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 3rem 0rem 3rem;
+}
+.bio p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.5;
+  text-align: ;
 }
 
 @media only screen and (max-width: 480px) {
   html {
-    font-size: 100%;
+    font-size: 65%;
   }
 
   .ham {
@@ -180,37 +271,62 @@ html {
     display: none;
   }
   .first {
-    background-size: 100% auto;
+    background-size: cover;
   }
   .nav {
-    height: 4.7rem;
+    padding: 3rem 0rem 0rem 0rem;
+    height: 9.7rem;
   }
   .logo a {
     font-size: 2rem;
   }
   .box2 {
-    width: 34.7rem;
-    height: 29.1rem;
-  } 
+    width: 39.7rem;
+    height: 60.1rem;
+  }
   .box1 {
-    width: 22.5rem;
-    height: 10.4rem;
-  } 
+    width: 32.5rem;
+    height: 12.4rem;
+  }
   #hi {
     font-size: 4rem;
-    margin-bottom: 1.2rem;
-  } 
+    margin-bottom: 0.2rem;
+  }
   .box1 h1 {
-    font-size: 2rem;
-    line-height: 2.6rem;
-  } 
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
   .con-icon {
-    right: 15.9rem;
-    top: 19.8rem;
+    right: 23rem;
+    top: 36.8rem;
     justify-content: space-around;
-  } 
-   .con-icon i {
+  }
+  .con-icon i {
     font-size: 1.9rem;
+  }
+
+  .profile-pic img {
+    width: 26rem;
+    height: 31rem;
+    margin-top: 8rem;
+  }
+  .heading {
+    margin-top: 8rem;
+  }
+  .heading h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
+  }
+  .bio {
+    padding: 0rem 1.8rem 0rem 4rem;
+  }
+  .bio p {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    text-align: ;
+    margin-bottom: 8rem;
+  }
 }
 
 @media only screen and (max-width: 998px) {
@@ -221,6 +337,6 @@ html {
 
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 45%;
+    font-size: 68%;
   }
 }

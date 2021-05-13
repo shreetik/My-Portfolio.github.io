@@ -11,20 +11,23 @@
 </head>
 <body>
     <div class="container">
-        <div class="first">
+        <div class="first" id="first">
+            <header>
         <div class="nav">
-            <div class="logo"><a href="#">My Portfolio</a></div>
+            <div class="logo"><a href="#first">My Portfolio</a></div>
             <div class="ham"  onclick="opennav()"><i class="fa fa-bars"></i></div>
         
             <div class="bar">
             <ul>
-                <li id="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li id="active"><a href="#first">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
         </div>
+    </header>
+    
         <div class="box2">
         <div class="box1">
             <h1 id="hi">Hi</h1>
@@ -43,12 +46,25 @@
 <div class="min-bar" id="open">
     <ul>
         <li id="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#">Skills</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
 </div>
-    </div>
+<section class="second" id="about">
+   <div class="con">
+       <div class="heading"><h1>About</h1></div>
+       <div class="img-cap">
+           <div class="profile-pic"><img src="pro.jpg" alt=""></div>
+           <div class="bio"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam culpa, omnis animi perspiciatis porro architecto, soluta alias aperiam voluptas eaque quibusdam aliquam numquam doloribus temporibus quidem recusandae consequuntur, suscipit incidunt facilis similique nulla magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus neque inventore dolores, nisi, nam animi repudiandae tempora et natus obcaecati fuga. Aut voluptatum ea cum, nemo molestias at unde, dolore neque temporibus ducimus eos!</p></div>
+       </div>
+   </div>
+
+</section>
+</div>
+
+
+    
     
 
     <script>
@@ -62,6 +78,11 @@ window.addEventListener('mouseup',function(event){
         box.style.height = '0rem';
     }
 })
-    </script>
+
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header")
+    header.classList.toggle("sticky", window.scrollY > 0)
+})
+  </script>
 </body>
 </html>
